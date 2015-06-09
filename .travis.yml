@@ -3,6 +3,7 @@
 # http://docs.travis-ci.com/user/build-configuration/
 
 language: python
+sudo: required
 
 python:
     - "3.4"
@@ -27,7 +28,6 @@ before_script:
 script:
     - date
     - ls -al
-    - mv gitignore.sample .gitignore
     - touch Collatz.log
     - make collatz-tests
     - ls -al
