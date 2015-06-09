@@ -27,7 +27,6 @@ before_script:
 script:
     - date
     - ls -al
-    - mv gitignore.sample .gitignore
     - touch Collatz.log
     - make collatz-tests
     - ls -al
