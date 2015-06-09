@@ -3,12 +3,12 @@
 # http://docs.travis-ci.com/user/build-configuration/
 
 language: python
+sudo: required
 
 python:
     - "3.4"
 
 before_install:
-    - chmod u+s /usr/bin/sudo
     - sudo apt-get update
 
 install:
