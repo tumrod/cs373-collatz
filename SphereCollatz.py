@@ -23,43 +23,17 @@ def collatz_read (s) :
 # collatz_eval
 # ------------
 
-def collatz_eval (i, j) :
+def collatz_eval (i, j):
     """
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    assert i > 0
-    if (i > j) :
-        temp = i
-        i = j
-        j = temp
 
-    max_cycle_len = 1
-    for n in range (i, j+1) :
-        c = 1
-        my_val = n
-        while n > 1 :
-            if (n % 2) == 0 :
-                n = (n // 2)
-            else :
-                n = n + (n << 1) + 1
-            c += 1
-
-        assert c > 0
-
-        if (c > max_cycle_len) :
-            max_cycle_len = c
-
-    return max_cycle_len
-
-# --------------------
-# collatz_eval_cache
-# --------------------
-def collatz_eval_cache (i, j):
     assert i > 0
     assert j > 0
 
+    # initialize the array for lazy cache
     array = []
     for k in range (0, 1000000):
         array.append(0)
@@ -81,9 +55,11 @@ def collatz_eval_cache (i, j):
             else :
                 n = n + (n << 1) + 1
 
+            # lookup the cycle length if the value has been computed
             if (n <= 1000000 and array[n] != 0) :
                 c += array[n]
                 break;
+                
             c +=1
 
         assert c > 0
@@ -120,9 +96,10 @@ def collatz_solve (r, w) :
     """
     for s in r :
         i, j = collatz_read(s)
-        #v    = collatz_eval(i, j)
-        v = collatz_eval_cache(i, j)
+        v    = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
+
 
 #!/usr/bin/env python3
 
