@@ -30,8 +30,6 @@ def collatz_eval (i, j) :
     return the max cycle length of the range [i, j]
     """
     assert i > 0
-    assert j > 0
-
     if (i > j) :
         temp = i
         i = j
@@ -45,8 +43,9 @@ def collatz_eval (i, j) :
             if (n % 2) == 0 :
                 n = (n // 2)
             else :
-                n = (3 * n) + 1
+                n = n + (n << 1) + 1
             c += 1
+
         assert c > 0
 
         if (c > max_cycle_len) :
@@ -55,37 +54,46 @@ def collatz_eval (i, j) :
     return max_cycle_len
 
 # --------------------
-# collatz_eager_cache
+# collatz_eval_cache
 # --------------------
+def collatz_eval_cache (i, j):
+    assert i > 0
+    assert j > 0
 
-def collatz_cache (i, j) :
+    array = []
+    for k in range (0, 1000000):
+        array.append(0)
+
     if (i > j) :
         temp = i
         i = j
         j = temp
 
-    #print "EXPECTED VAL: " + str(collatz_eval(i,j))
-    
-    if ((i == j) or (i < 1000 or j < 1000)) :
-        return collatz_eval(i, j)
-        #print "RESULT_1: " + str(collatz_eval(i, j))
-    else :
-        start = i//1000
-        end = j//1000
+    max_cycle_len = 1
 
-        r = j%1000
-        
-        #print start, my_list[start], end, my_list[end], r
+    for n in range (i, j+1) :
+        c = 1
+        index = n
 
-        max_len = collatz_eval(j-r, j)
+        while n > 1 :
+            if (n % 2) == 0 :
+                n = (n // 2)
+            else :
+                n = n + (n << 1) + 1
 
-        for val in range(start, end) :
-            current = my_list[val]
-            if (current > max_len) :
-                max_len = current
+            if (n <= 1000000 and array[n] != 0) :
+                c += array[n]
+                break;
+            c +=1
 
-        #print "RESULT_2: " + str(max_len)
-        return max_len
+        assert c > 0
+        array[index] = c
+
+        if (c > max_cycle_len) :
+            max_cycle_len = c
+
+    return max_cycle_len
+
 
 # -------------
 # collatz_print
@@ -113,7 +121,7 @@ def collatz_solve (r, w) :
     for s in r :
         i, j = collatz_read(s)
         #v    = collatz_eval(i, j)
-        v = collatz_cache(i, j)
+        v = collatz_eval_cache(i, j)
         collatz_print(w, i, j, v)
 
 #!/usr/bin/env python3
