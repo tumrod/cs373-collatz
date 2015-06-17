@@ -1,0 +1,167 @@
+commit fbff2da2fea6aca0ebbbd21e48f853ec206d7abd
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:43:55 2015 -0500
+
+    implemented meta-cache closes #21
+
+commit 3c14abc3a8fb0f56c530cb1c701762e02ae791fa
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 20:25:35 2015 -0500
+
+    implemented global list for lazy cache closes #20
+
+commit 9ed56991da11c29391866c5395c69299a96098cf
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:16:58 2015 -0500
+
+    output file
+
+commit f1c19462ae9d0ff52ef62a1f06186e5324dc7f32
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:11:50 2015 -0500
+
+    add Collatz.log closes #18
+
+commit f52b326a899564baa2f5fdff2bcc037cb93ee608
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:02:49 2015 -0500
+
+    make Collatz.html closes #17
+
+commit 9098f262690d5f721af6bd9e98ed3707e67d48b5
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 18:55:01 2015 -0500
+
+    modify .gitignore
+
+commit b283cccd3519328f4438d9a612c7fc5fc122f7fa
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 18:51:44 2015 -0500
+
+    simplest cache solution submited to sphere
+
+commit 060baa03b5311df026f95b78266d435ff37f3ba2
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 17:52:13 2015 -0500
+
+    sphere accepted the cache solution
+
+commit 788dccb63aab838211bf800545cc582d840b4a2b
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 17:44:40 2015 -0500
+
+    implemented simplest possible cache
+
+commit 2f938355e4340e897e3d55f3a850d2edbdebd86a
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 16:49:14 2015 -0500
+
+    implemented simplest eager cache closes #15
+
+commit 2d7b6f85ded431406bec9646b6bd6796241649c0
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 13:30:58 2015 -0500
+
+    edit makefile to check EID-* files for TravisCI
+
+commit 8c4062a9bd5a3a987929c5e8e05fe1c864e4b7e8
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 13:14:46 2015 -0500
+
+    create a 100 line of acceptance tests closes #13
+
+commit e15b98b05121ee06d82d22e847911a7fa493e1c1
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 12:57:11 2015 -0500
+
+    added tu564-RunCollatz.in closes #13
+
+commit e34dcc302f30821e2f7da1442e6eae72aa88b743
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 12:55:28 2015 -0500
+
+    added SphereCollatz.py closes #12
+
+commit e3ddc142e3908c292e45ddaa48e08ce9021c2fa2
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 12:16:12 2015 -0500
+
+    simple solution and fixed #11
+
+commit 94820bb346b4d70b56c0a2c54a881fbffe6923fd
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 12:07:49 2015 -0500
+
+    collatz_eval() simple implementation closes #10
+
+commit 860d3758f57329de66e033fd1af1bded23688fd2
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 11:54:12 2015 -0500
+
+    closes #9 add corner cases and failure cases
+
+commit 06c3a8b562d94fd7e905f30debbd010cef6e7e1f
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Wed Jun 10 00:43:23 2015 -0500
+
+    fixed unit tests, got failures closes #8
+
+commit 263501f22f6e1b51bee314c2d4d6b1b055cbe83b
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Wed Jun 10 00:12:35 2015 -0500
+
+    initial make test closes#7
+
+commit 0af3b7ece71632cac1e825a65d4df15c725c972f
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jun 9 22:44:09 2015 -0500
+
+    add initial files
+
+commit 6b7a9e9a25c79974fde368b44125d26ddeb7ad9b
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jun 9 22:39:03 2015 -0500
+
+    add gitignore.sample
+
+commit 6ee523dedc09435796f04517ba1d2ab01eaf1549
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 20:51:04 2015 -0500
+
+    rename gitignore to .gitignore
+
+commit ec2e58e85e82f3c868c77ddcaa0cfd74baa5db65
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 20:23:39 2015 -0500
+
+    try fixing travis CI build error
+
+commit 0aadda79c9650078fd1043a93bc69530fcacc866
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 20:10:50 2015 -0500
+
+    try fixing travis CI build error
+
+commit 69afb7d376eac6e34b5480947fce57fbc8dca9ed
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 19:52:34 2015 -0500
+
+    re-add .travis.yml for travis CI build
+
+commit 89074c078794d6845626211406c37248aff6705b
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 19:24:13 2015 -0500
+
+    initial files
+
+commit a41d20fd5590e7ab105125d99909c97c5e8f2f4d
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 12:50:03 2015 -0500
+
+    initial files
+
+commit ad91385edcb1164aef64e127c289a5d8ba5cf2f9
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jun 7 23:15:26 2015 -0500
+
+    first commit
