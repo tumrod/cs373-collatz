@@ -15,7 +15,7 @@
 from io       import StringIO
 from unittest import main, TestCase
 
-from Collatz import collatz_read, collatz_eval, collatz_print, collatz_solve
+from Collatz import collatz_read, collatz_eval, collatz_print, collatz_solve, collatz_cache, meta_cache_helper
 
 # -----------
 # TestCollatz
@@ -65,6 +65,40 @@ class TestCollatz (TestCase) :
     def test_eval_6 (self) :
         v = collatz_eval(450, 350)
         self.assertEqual(v, 134)
+
+    # -----
+    # cache
+    # -----
+    
+    def test_eval_cache_1 (self) :
+        v = collatz_cache(1, 10)
+        self.assertEqual(v, 20)
+
+    def test_eval_cache_2 (self) :
+        v = collatz_cache(100, 200)
+        self.assertEqual(v, 125)
+
+    def test_eval_cache_3 (self) :
+        v = collatz_cache(201, 210)
+        self.assertEqual(v, 89)
+
+    # ------------
+    # cache_helper
+    # ------------
+    
+    def test_cache_helper_1 (self) :
+        # a smaller list of meta_cache for testing purpose
+        list_more_1000 = [179, 182, 217, 238, 215, 236, 262, 252, 247]
+        v = meta_cache_helper(3811, 5773, list_more_1000, 1000)
+        self.assertEqual(v, 236)
+
+    def test_cache_helper_2 (self) :
+        list_less_1000 = [119, 125, 128, 144, 142, 137, 145, 171, 179, 174]
+        v = meta_cache_helper(100, 200, list_less_1000, 100)
+        self.assertEqual(v, 125)
+
+
+
 
     # -----
     # print

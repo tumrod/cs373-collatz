@@ -125,6 +125,10 @@ def meta_cache_helper(i, j, cache_list, const_val):
     const_val either 100 or 1000
     return the max cycle length of the range [i, j]
     """
+
+    assert i < j
+    assert const_val == 100 or const_val == 1000
+    
     start_index = i//const_val
     end_index = j//const_val
     max_cycle_len = 1
