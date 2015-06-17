@@ -6,6 +6,14 @@
 # Glenn P. Downing
 # ---------------------------
 
+# ----------
+# init_cache
+# ----------
+global array 
+array = []
+for k in range (0, 1000000):
+    array.append(0)
+
 # ------------
 # collatz_read
 # ------------
@@ -33,11 +41,6 @@ def collatz_eval (i, j):
     assert i > 0
     assert j > 0
 
-    # initialize the array for lazy cache
-    array = []
-    for k in range (0, 1000000):
-        array.append(0)
-
     if (i > j) :
         temp = i
         i = j
@@ -49,24 +52,25 @@ def collatz_eval (i, j):
         c = 1
         index = n
 
-        while n > 1 :
-            if (n % 2) == 0 :
-                n = (n // 2)
-            else :
-                n = n + (n << 1) + 1
+        if (array[n] != 0) :
+            c = array[n]
+        else :
+            while n > 1 :
+                if (n % 2) == 0 :
+                    n = (n // 2)
+                else :
+                    n = n + (n << 1) + 1
 
-            # lookup the cycle length if the value has been computed
-            if (n <= 1000000 and array[n] != 0) :
-                c += array[n]
-                break;
-                
-            c +=1
+                # lookup the cycle length if the value has been computed
+                if (n <= 1000000 and array[n] != 0) :
+                    c += array[n]
+                    break;
+                    
+                c += 1
 
         assert c > 0
         array[index] = c
-
-        if (c > max_cycle_len) :
-            max_cycle_len = c
+        max_cycle_len = max(max_cycle_len, c)
 
     return max_cycle_len
 
