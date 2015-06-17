@@ -1,3 +1,39 @@
+commit 8f5447fd276e8858bb6c7cb9e42eee5fe3c36b9a
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:55:44 2015 -0500
+
+    edited comment in Collatz.py closes #22
+
+commit 43da50733c25f8e94117f7639cbe54eedd89abf4
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:50:30 2015 -0500
+
+    added Collatz.html and Collatz.log closes #17 closes #19
+
+commit fbff2da2fea6aca0ebbbd21e48f853ec206d7abd
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:43:55 2015 -0500
+
+    implemented meta-cache closes #21
+
+commit 3c14abc3a8fb0f56c530cb1c701762e02ae791fa
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 20:25:35 2015 -0500
+
+    implemented global list for lazy cache closes #20
+
+commit 9ed56991da11c29391866c5395c69299a96098cf
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:16:58 2015 -0500
+
+    output file
+
+commit f1c19462ae9d0ff52ef62a1f06186e5324dc7f32
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:11:50 2015 -0500
+
+    add Collatz.log closes #18
+
 commit f52b326a899564baa2f5fdff2bcc037cb93ee608
 Author: tumrod <tumrod@cs.utexas.edu>
 Date:   Tue Jun 16 19:02:49 2015 -0500
