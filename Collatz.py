@@ -9,10 +9,9 @@
 # ----------
 # init_cache
 # ----------
-"""
-global list named array for lazy cache
-global list list_less_1000, list_more_1000 for meta cache
-"""
+
+# global list named array for lazy cache
+# global list list_less_1000, list_more_1000 for meta cache
 
 global array 
 array = []
