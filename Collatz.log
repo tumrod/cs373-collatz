@@ -1,3 +1,22 @@
+commit 112d7a493503bd44a97e4911f50678491d09d9e6
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 22:18:26 2015 -0500
+
+    added more test cases for cache functions
+
+commit 1d1ed8fef259b91da383b5b1f46152b584e3019b
+Merge: bfa84f5 d30520f
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:58:36 2015 -0500
+
+    Merge branch 'dev'
+
+commit d30520fb6bab076106031d8a7df250d354c191d8
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 21:57:23 2015 -0500
+
+    added log and pydoc
+
 commit 8f5447fd276e8858bb6c7cb9e42eee5fe3c36b9a
 Author: tumrod <tumrod@cs.utexas.edu>
 Date:   Tue Jun 16 21:55:44 2015 -0500
@@ -21,6 +40,13 @@ Author: tumrod <tumrod@cs.utexas.edu>
 Date:   Tue Jun 16 20:25:35 2015 -0500
 
     implemented global list for lazy cache closes #20
+
+commit bfa84f5e16c7422cbbb866dc2d28e0c0856ab3c0
+Merge: a9586de 9ed5699
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Tue Jun 16 19:23:37 2015 -0500
+
+    Merge branch 'dev'
 
 commit 9ed56991da11c29391866c5395c69299a96098cf
 Author: tumrod <tumrod@cs.utexas.edu>
@@ -112,11 +138,25 @@ Date:   Tue Jun 16 11:54:12 2015 -0500
 
     closes #9 add corner cases and failure cases
 
+commit a9586de8d9106162605fcf80a919cc3fde8bffe7
+Merge: 037cd43 06c3a8b
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Wed Jun 10 00:44:43 2015 -0500
+
+    Merge branch 'dev' after closes #8
+
 commit 06c3a8b562d94fd7e905f30debbd010cef6e7e1f
 Author: tumrod <tumrod@cs.utexas.edu>
 Date:   Wed Jun 10 00:43:23 2015 -0500
 
     fixed unit tests, got failures closes #8
+
+commit 037cd43645fd49919765ab2164eed4aa240797f8
+Merge: 5d84b8e 263501f
+Author: tumrod <tumrod@cs.utexas.edu>
+Date:   Wed Jun 10 00:19:07 2015 -0500
+
+    Merge branch 'dev'
 
 commit 263501f22f6e1b51bee314c2d4d6b1b055cbe83b
 Author: tumrod <tumrod@cs.utexas.edu>
@@ -135,6 +175,13 @@ Author: tumrod <tipparat.umrod@utexas.edu>
 Date:   Tue Jun 9 22:39:03 2015 -0500
 
     add gitignore.sample
+
+commit 5d84b8eb9713dd62eef5e8cdda0806e758d9e966
+Merge: 690314d 6ee523d
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 20:58:24 2015 -0500
+
+    Merge branch 'dev' to master after successful Travis CI build
 
 commit 6ee523dedc09435796f04517ba1d2ab01eaf1549
 Author: tumrod <tipparat.umrod@utexas.edu>
@@ -159,6 +206,12 @@ Author: tumrod <tipparat.umrod@utexas.edu>
 Date:   Mon Jun 8 19:52:34 2015 -0500
 
     re-add .travis.yml for travis CI build
+
+commit 690314d6f4ec2ed9815cc38bf15ab0289b4bfcb2
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jun 8 19:39:03 2015 -0500
+
+    change makefile.sample to makefile
 
 commit 89074c078794d6845626211406c37248aff6705b
 Author: tumrod <tipparat.umrod@utexas.edu>
